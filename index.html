@@ -22,26 +22,25 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <video autoplay muted loop id="background-video">
-      <source src="" type="video/mp4" />
-    </video>
-    <div>
-      <section class="poems-section">
-        <form action="">
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+
+      <main>
+        <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter the topic of the poem"
+            placeholder="Enter the topic of the French poem"
             autofocus
             required
+            autocomplete="off"
+            class="instructions"
           />
-          <input type="submit" />
+          <input type="submit" class="submit-button" />
         </form>
-        <button class="poem-button btn-branding" id="generate-poem-button">
-          Generate Poem
-        </button>
-        <div id="poem"></div>
-      </section>
-    </div>
+        <div class="poem" id="poem"></div>
+      </main>
     <footer className="App-footer">
       <small>
         Open-Source Code on
