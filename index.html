@@ -28,48 +28,52 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the French poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Love or Happiness</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
-    <footer className="App-footer">
-      <small>
-        Open-Source Code on
-        <a
-          href="https://github.com/MigenaPl/AI-poems-project"
-          target="_blank"
-          rel="noreferrer"
+      <footer className="App-footer">
+        <small>
+          Open-Source Code on
+          <a
+            href="https://github.com/MigenaPl/AI-poems-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub</a
+          >
+          by
+          <a
+            href="https://migena-plenishti-portfolio.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Migena Plenishti</a
+          >
+          , hosted on
+          <a
+            href="https://ai-poems-gen-by-mp.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify</a
+          >.</small
         >
-          GitHub</a
-        >
-        by
-        <a
-          href="https://migena-plenishti-portfolio.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Migena Plenishti</a
-        >
-        , hosted on
-        <a
-          href="https://ai-poems-gen-by-mp.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Netlify</a
-        >.</small
-      >
-    </footer>
-
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
